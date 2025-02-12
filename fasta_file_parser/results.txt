@@ -1,0 +1,286 @@
+----test_part1_in.fasta----
+
+>Seq_1
+ACGTACGT
+Type: DNA
+Length: 8
+Counts: A=2, C=2, G=2, T=2
+
+>Seq_2
+AUGCUG
+Type: RNA
+Length: 6
+Counts: A=1, C=1, G=2, U=2
+
+>Seq_3
+TUUUU
+Type: Invalid
+Length: 5
+Counts: T=1, U=4
+
+>Seq_4
+ACGNRYACGT
+Type: DNA
+Length: 10
+Counts: A=2, C=2, G=2, T=1, Ambiguous=3
+
+>Seq_5
+augunacg
+Type: Invalid
+Length: 8
+Counts: Ambiguous=8
+
+>Seq_6
+TTTTTTT
+Type: DNA
+Length: 7
+Counts: T=7
+
+>Seq_7
+UUUNNN
+Type: RNA
+Length: 6
+Counts: U=3, Ambiguous=3
+
+>Seq_8
+XYZXYZ
+Type: Invalid
+Length: 6
+Counts: Ambiguous=6
+
+>Seq_9
+ACGTU
+Type: Invalid
+Length: 5
+Counts: A=1, C=1, G=1, T=1, U=1
+
+>Seq_10
+NRYYNN
+Type: Invalid
+Length: 6
+Counts: Ambiguous=6
+
+>Seq_11
+AGCUA
+Type: RNA
+Length: 5
+Counts: A=2, C=1, G=1, U=1
+
+>Seq_12
+UAGT
+Type: Invalid
+Length: 4
+Counts: A=1, G=1, T=1, U=1
+
+--SUMMARY--
+Valid DNA sequences: 3
+Mean DNA length: 8.33
+Valid RNA sequences: 3
+Mean RNA length: 5.67
+Invalid sequences: 6
+
+
+----test_part2_in.fasta----
+
+>DNA_1
+ATGAAATGATAA
+Type: DNA
+Length: 12
+Counts: A=7, G=2, T=3
+Found 3 ORF(s):
+- Start at 0, Stop at 6, ORF: ATGAAATGA
+- Start at 0, Stop at 9, ORF: ATGAAATGATAA
+- Start at 5, Stop at 9, ORF: ATGATAA
+
+>DNA_2
+ACGTACGT
+Type: DNA
+Length: 8
+Counts: A=2, C=2, G=2, T=2
+
+>DNA_3
+ATGCCCTGATGA
+Type: DNA
+Length: 12
+Counts: A=3, C=3, G=3, T=3
+Found 2 ORF(s):
+- Start at 0, Stop at 6, ORF: ATGCCCTGA
+- Start at 0, Stop at 9, ORF: ATGCCCTGATGA
+
+>RNA_1
+AUGAAACCCUGA
+Type: RNA
+Length: 12
+Counts: A=5, C=3, G=2, U=2
+Found 1 ORF(s):
+- Start at 0, Stop at 9, ORF: AUGAAACCCUGA
+
+>RNA_2
+AUGUGA
+Type: RNA
+Length: 6
+Counts: A=2, G=2, U=2
+Found 1 ORF(s):
+- Start at 0, Stop at 3, ORF: AUGUGA
+
+>INVALID_1
+ATGU
+Type: Invalid
+Length: 4
+Counts: A=1, G=1, T=1, U=1
+
+>DNA_4
+TTTATGCCCTAA
+Type: DNA
+Length: 12
+Counts: A=3, C=3, G=1, T=5
+Found 1 ORF(s):
+- Start at 3, Stop at 9, ORF: ATGCCCTAA
+
+>RNA_3
+AUGAUGUAG
+Type: RNA
+Length: 9
+Counts: A=3, G=3, U=3
+Found 2 ORF(s):
+- Start at 0, Stop at 6, ORF: AUGAUGUAG
+- Start at 3, Stop at 6, ORF: AUGUAG
+
+>DNA_5
+ATGCCCTAGTAA
+Type: DNA
+Length: 12
+Counts: A=4, C=3, G=2, T=3
+Found 2 ORF(s):
+- Start at 0, Stop at 6, ORF: ATGCCCTAG
+- Start at 0, Stop at 9, ORF: ATGCCCTAGTAA
+
+>RNA_4
+CCCAGGAUGUAGUAA
+Type: RNA
+Length: 15
+Counts: A=5, C=3, G=4, U=3
+Found 2 ORF(s):
+- Start at 6, Stop at 9, ORF: AUGUAG
+- Start at 6, Stop at 12, ORF: AUGUAGUAA
+
+>INVALID_2
+TTUUA
+Type: Invalid
+Length: 5
+Counts: A=1, T=2, U=2
+
+>DNA_6
+ATGAAATAGTAGACGT
+Type: DNA
+Length: 16
+Counts: A=7, C=1, G=4, T=4
+Found 2 ORF(s):
+- Start at 0, Stop at 6, ORF: ATGAAATAG
+- Start at 0, Stop at 9, ORF: ATGAAATAGTAG
+
+--SUMMARY--
+Valid DNA sequences: 6
+Mean DNA length: 12.00
+Valid RNA sequences: 4
+Mean RNA length: 10.50
+Invalid sequences: 2
+
+
+----test_part3_in.fasta----
+
+>SEQ_DNA_1
+ATGAAATAGTAA
+Type: DNA
+Length: 12
+Counts: A=7, G=2, T=3
+Found 2 ORF(s):
+- Start at 0, Stop at 6, ORF: ATGAAATAG
+- Start at 0, Stop at 9, ORF: ATGAAATAGTAA
+
+>SEQ_RNA_1
+AUGAAAUAGUAA
+Type: RNA
+Length: 12
+Counts: A=7, G=2, U=3
+Found 2 ORF(s):
+- Start at 0, Stop at 6, ORF: AUGAAAUAG
+- Start at 0, Stop at 9, ORF: AUGAAAUAGUAA
+
+>SEQ_DNA_2
+ACGTACGT
+Type: DNA
+Length: 8
+Counts: A=2, C=2, G=2, T=2
+
+>SEQ_DNA_3
+TTTTTTTT
+Type: DNA
+Length: 8
+Counts: T=8
+
+>SEQ_INVALID_1
+UUTTT
+Type: Invalid
+Length: 5
+Counts: T=3, U=2
+
+>SEQ_RNA_2
+AUGCCCUAG
+Type: RNA
+Length: 9
+Counts: A=2, C=3, G=2, U=2
+Found 1 ORF(s):
+- Start at 0, Stop at 6, ORF: AUGCCCUAG
+
+>SEQ_DNA_4
+ATGCCCTGA
+Type: DNA
+Length: 9
+Counts: A=2, C=3, G=2, T=2
+Found 1 ORF(s):
+- Start at 0, Stop at 6, ORF: ATGCCCTGA
+
+>SEQ_INVALID_2
+ACGTU
+Type: Invalid
+Length: 5
+Counts: A=1, C=1, G=1, T=1, U=1
+
+>SEQ_RNA_3
+AUGAAACGCGCGUAA
+Type: RNA
+Length: 15
+Counts: A=6, C=3, G=4, U=2
+Found 1 ORF(s):
+- Start at 0, Stop at 12, ORF: AUGAAACGCGCGUAA
+
+>SEQ_DNA_5
+ATGXYZ
+Type: DNA
+Length: 6
+Counts: A=1, G=1, T=1, Ambiguous=3
+
+>SEQ_DNA_6
+ATGAAACCCGGGTTTTAA
+Type: DNA
+Length: 18
+Counts: A=6, C=3, G=4, T=5
+Found 1 ORF(s):
+- Start at 0, Stop at 15, ORF: ATGAAACCCGGGTTTTAA
+
+>SEQ_RNA_4
+UAAAAUGUGAUAA
+Type: RNA
+Length: 13
+Counts: A=7, G=2, U=4
+Found 2 ORF(s):
+- Start at 4, Stop at 7, ORF: AUGUGA
+- Start at 4, Stop at 10, ORF: AUGUGAUAA
+
+--SUMMARY--
+Valid DNA sequences: 6
+Mean DNA length: 10.17
+Valid RNA sequences: 4
+Mean RNA length: 12.25
+Invalid sequences: 2
